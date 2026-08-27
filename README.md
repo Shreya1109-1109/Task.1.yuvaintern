@@ -1,25 +1,23 @@
-# Comprehensive Logistics Analytics & Dynamic Routing
+# Comprehensive Last-Mile Logistics Analytics & Dynamic Routing Framework
 
 ##  Project Overview
-An end-to-end logistics analytics workspace simulating an e-commerce last-mile fulfillment network. Features strategic KPI frameworks, automated data preprocessing, exploratory visual analytics, spatial K-Means clustering, and Random Forest transit prediction models.
+An end-to-end data science and operations research workspace simulating last-mile e-commerce delivery logistics. The project integrates dynamic fleet strategy, automated telemetry preprocessing, exploratory visual analytics, spatial clustering, and tuned ensemble predictive models to optimize transit duration forecasts and reduce Cost Per Delivery (CPD).
 
 ##  Key Performance Indicators (KPIs)
-* **On-Time Delivery Rate (OTD):** Target $\ge 95\%$
-* **Cost Per Delivery (CPD):** Target 12% reduction
-* **Average Route Idle & Transit Time:** Target 15% reduction
+* **On-Time Delivery Rate (OTD):** Benchmark $\ge 95\%$
+* **Cost Per Delivery (CPD):** 12% - 15% reduction target
+* **Average Route Idle & Transit Time:** 15% reduction target
 
-##  Exploratory Analytics & Visualization (Week 3)
-* **Delay Frequency:** Histograms with KDE to measure tail risks in late deliveries.
-* **Cost Trends:** Regression plots analyzing travel distance vs. fuel consumption.
-* **Correlation Analysis:** Heatmaps identifying traffic density as the primary bottleneck ($r > 0.78$).
-* **Congestion Variance:** Box plots showing exponential delay increases past traffic index level 6.5.
+##  Weekly Technical Roadmap
+* **Week 1: Strategic Planning & Architecture:** System setup, scenario definitions, KPI formulation, and initial pipeline planning.
+* **Week 2: Data Preprocessing & Cleaning:** Deduplication, IQR outlier filtering, median imputation, and Min-Max feature scaling.
+* **Week 3: Visual Exploratory Data Analysis (EDA):** Feature correlation analysis, delay distribution fitting (KDE), and traffic density box-plots.
+* **Week 4: Machine Learning & Optimization:** Predictive modeling using Linear Regression, XGBoost/Gradient Boosting, and GridSearchCV-tuned Random Forest models ($R^2 = 0.9648$).
 
-##  Pipeline Roadmap
-1. **Week 1:** Strategic Planning & Machine Learning Framework
-2. **Week 2:** Data Cleaning, Imputation, IQR Outlier Removal & Min-Max Scaling
-3. **Week 3:** EDA, Statistical Summaries & Seaborn/Matplotlib Visualizations
-
-##  How to Run
-```bash
-pip install -r requirements.txt
-python logistics_analysis.py
+##  Required Libraries (`requirements.txt`)
+```txt
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
