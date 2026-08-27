@@ -1,20 +1,27 @@
-# Task.1.yuvaintern
-# Strategic Planning and Data Exploration in Logistics
+# Strategic Planning & Data Preprocessing in Logistics
 
-## Project Overview
-This project focuses on optimizing last-mile delivery operations for an e-commerce fulfillment network. By leveraging spatial clustering and machine learning algorithms, the pipeline dynamically segments delivery zones and predicts route durations to enhance efficiency.
+##  Project Overview
+This project simulates an enterprise-level last-mile logistics optimization framework. It establishes dynamic routing strategies, spatial micro-hub clustering, and machine learning ETA predictions while enforcing a strict data collection, cleaning, and preprocessing pipeline for telemetry datasets.
 
-## Key Performance Indicators (KPIs)
+##  Key Performance Indicators (KPIs)
 * **On-Time Delivery Rate (OTD):** Target $\ge 95\%$
 * **Cost Per Delivery (CPD):** Target 12% reduction
 * **Average Route Idle & Transit Time:** Target 15% reduction
 
-## Project Structure
-* `logistics_analysis.py`: Core Python script containing data cleaning, K-Means clustering, and duration prediction models.
-* `requirements.txt`: Python dependencies required to run the pipeline.
-* `README.md`: Project documentation and workflow outline.
+##  Project Structure
+* `logistics_analysis.py`: Contains data preprocessing, cleaning, K-Means geospatial clustering, and Random Forest predictive models.
+* `requirements.txt`: Python libraries needed to run the analysis.
+* `README.md`: Project documentation and process roadmap.
 
-## How to Run
+##  Data Preprocessing Pipeline (Week 2 Highlights)
+1. **Deduplication:** Removes duplicate `order_id` records.
+2. **Text Normalization:** Standardizes categorical text formatting.
+3. **Geospatial Bounding:** Filters out invalid coordinate values.
+4. **Grouped Median Imputation:** Handles missing transit durations without skewing distribution.
+5. **IQR Outlier Removal:** Eliminates GPS signal noise and extreme delays.
+6. **Feature Scaling & Encoding:** Applies Min-Max scaling and One-Hot encoding.
+
+##  How to Run
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
